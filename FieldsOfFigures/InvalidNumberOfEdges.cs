@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace FieldsOfFigures
 {
-    interface Figure
+    class InvalidNumberOfEdges : Exception
     {
-        double calculateField(double length);
+        public InvalidNumberOfEdges()
+        {}
+        
     }
 }

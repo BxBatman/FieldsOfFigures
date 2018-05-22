@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace FieldsOfFigures
 {
-    class Square : Figure
+    class Square : Polygon
     {
-        
-        public double calculateField(double length)
+        private double length;
+        public Square(int num,double length) : base(num,length)
         {
-            double calculation = Math.Pow(length, 2);
+            this.length = length;
+        }
+
+        override
+            public double calculateArea()
+        {
+            double calculation = Math.Pow(length,2);
+            calculation = Math.Round(calculation, 2);
             return calculation;
         }
     }

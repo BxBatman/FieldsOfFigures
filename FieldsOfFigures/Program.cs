@@ -11,9 +11,18 @@ namespace FieldsOfFigures
         
        static void Main(string[] args)
         {
-            FigureFactory figureFactory = new FigureFactory();
-            Figure figure = figureFactory.createFigure(4);
-            Console.WriteLine(figure.calculateField(3));
+            PolygonFactory polygonFactory = new PolygonFactory();
+            Polygon polygon = null;
+            try
+            {
+               polygon = polygonFactory.createFigure(0, 0);
+               Console.WriteLine(polygon.calculateArea());
+            }
+            catch (Exception e)
+            {
+               Console.WriteLine("Number of edges must be greater than 2"+"\n\n"+e.ToString());
+            }
+
             Console.ReadLine();
             
         }

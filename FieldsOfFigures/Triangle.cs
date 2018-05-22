@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace FieldsOfFigures
 {
-    class Triangle : Figure
+    class Triangle : Polygon
     {
-        
-        
-
-        public double calculateField(double length)
+        private double length;
+        public Triangle(int num,double length) : base(num,length)
         {
-            double calculation = (Math.Pow(length, 2) * Math.Sqrt(3)) / 2;
+            this.length = length;
+            
+        }
+
+        override
+        public double calculateArea()
+        {   
+            double calculation = Math.Pow(length, 2) * Math.Sqrt(3)/4;
+            calculation = Math.Round(calculation, 2);
             return calculation;
         }
     }

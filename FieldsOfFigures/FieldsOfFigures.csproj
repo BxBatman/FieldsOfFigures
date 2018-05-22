@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Figure.cs" />
-    <Compile Include="FigureFactory.cs" />
+    <Compile Include="InvalidNumberOfEdges.cs" />
+    <Compile Include="PolygonFactory.cs" />
+    <Compile Include="Polygon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Square.cs" />
