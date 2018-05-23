@@ -8,7 +8,7 @@ namespace FieldsOfFigures
 {
     class PolygonFactory
     {
-        public Polygon createFigure(int num,double length)
+        public Polygon createPolygon(int num,double length)
         {
             Polygon polygon = null;
 
